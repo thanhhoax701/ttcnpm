@@ -1,5 +1,4 @@
 <?php
-// Kết nối đến cơ sở dữ liệu
 include './config.php';
 
 if (isset($_POST['maMonHoc']) && isset($_POST['tenMonHoc'])) {
@@ -57,4 +56,3 @@ if (isset($_POST['maMonHoc']) && isset($_POST['tenMonHoc'])) {
 }
 
 mysqli_close($conn);
-?>

@@ -1,5 +1,4 @@
 <?php
-// Kết nối đến cơ sở dữ liệu
 include './config.php';
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {

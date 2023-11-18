@@ -1,17 +1,135 @@
+/* CSS Navbar */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
 }
 
-th, td {
+th,
+td {
     padding: 8px;
     text-align: left;
+}
+td a:hover {
+    color: red;
 }
 
 .hidden {
     display: none;
+}
+
+/* Style cho menu navigation */
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #333;
+}
+
+.header {
+    display: flex;
+}
+
+.nav_link {
+    text-align: center;
+}
+
+.nav_link a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav_link a:hover {
+    background-color: #555;
+}
+
+/* CSS username và nút đăng xuất */
+
+.nav_item {
+    max-width: 400px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.username {
+    margin-right: 10px;
+}
+
+.username span {
+    color: red;
+}
+
+.nav_item button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_item button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Form */
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.form_dang_ky {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form_dang_ky label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_dang_ky input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.form_dang_ky input[type="submit"] {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.form_dang_ky input[type="submit"]:hover {
+    background-color: #45a049;
 }

@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         $_SESSION["loggedin"] = true;
         $_SESSION["username"] = $username;
-        header("location: danh-sach-dang-ky-mon-hoc.php");
+        header("location: danh_sach_dang_ky_mon_hoc.php");
     } else {
-        $error_message = "Tài khoản và mật khẩu không đúng";
+        echo '<script>alert("Tài khoản và mật khẩu không đúng.");</script>';
     }
 }
 ?>
@@ -31,8 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <h2>Đăng nhập</h2>
-    <form method="post" action="">
+    <h2 class="title">Đăng nhập</h2>
+    <form method="post" action="" class="form_dang_ky">
         <label for="username">Tài khoản:</label>
         <input type="text" id="username" name="username"><br><br>
         <label for="password">Mật khẩu:</label>
